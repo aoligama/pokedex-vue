@@ -4,9 +4,11 @@
             <h1>Choose your Pokémon!</h1>
         </div>
         <div class="text-right">
-            <v-btn color="primary" text @click="goToMyPokemon()">
-              My Pokémon
-            </v-btn>
+            <router-link to="/my-pokemon">
+                <v-btn color="primary" text @click="goToMyPokemon()">
+                    My Pokémon
+                </v-btn>
+            </router-link>
         </div>
         <v-row class="mt-4">
             <v-col cols="3" v-for="pokemon in allPokemons" :key="pokemon.name">

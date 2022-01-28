@@ -9,8 +9,13 @@ const routes = [
       header,
       default: () => import('@/views/Home.vue'),
     },
-    meta: {
-      requiresAuth: true,
+  },
+  {
+    path: '/my-pokemon',
+    name: 'my-pokemon',
+    components: {
+      header,
+      default: () => import('@/views/MyPokemon.vue'),
     },
   },
   {
