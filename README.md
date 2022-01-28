@@ -1,6 +1,6 @@
-# 🚀 Boilerplate Vue.js + Vuetify
+# 🚀 Pokedex Vue
 
-This is a boilerplate with Vue.js + Vuetify
+This is a simple Pokémon app made with Vue.js and Vuetify.
 
 ## 🛠 Tools
 - Vue.js
@@ -9,11 +9,11 @@ This is a boilerplate with Vue.js + Vuetify
 - Vue Router
 -  Vuex
 
-
-
-## ⚡️ How to Use
-
-Clone this repo or import the code on your own repo.
+## ToDos
+- Locations screen
+- Items screen
+- Save multiple Pokemons, Items and Locations as Favorites
+- Implement a menu
 
 ## ⚙️ Project setup
 ```
