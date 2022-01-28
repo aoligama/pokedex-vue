@@ -14,7 +14,7 @@
         >
           {{ snackbar.text }}
           <template v-slot:action="{ attrs }">
-            <v-btn text v-bind="attrs" @click="snackbar.show = false">
+            <v-btn text v-bind="attrs" @click="closeSnackbar">
               Fechar
             </v-btn>
           </template>
@@ -37,6 +37,11 @@ export default {
     snackbar() {
       const sb = { ...this.$store.getters['snackbar/snackbar'] }
       return sb
+    },
+  },
+  methods: {
+    closeSnackbar() {
+      this.$store.commit('snackbar/closeSnackbar', false)
     },
   },
 }
